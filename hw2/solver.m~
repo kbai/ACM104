@@ -1,0 +1,8 @@
+A = zeros(N+1);
+for ii = 1:1:N-1
+    A(ii,ii) = -1;
+    A(ii,ii+1) = 2;
+    A(ii,ii+2) = -1;
+end
+A(N,1) = 1;
+A(N+1 , N+1

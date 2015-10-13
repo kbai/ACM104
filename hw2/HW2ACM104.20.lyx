@@ -1,0 +1,1046 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a)
+\end_layout
+
+\begin_layout Standard
+(i) If there is not a 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $Tv=w$
+\end_inset
+
+ , then this correspond to case(i)
+\end_layout
+
+\begin_layout Standard
+(ii) If there is at least one 
+\begin_inset Formula $v*\in V$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $Tv*=w.$
+\end_inset
+
+ Then we prove that the solution set is 
+\begin_inset Formula $v*+X$
+\end_inset
+
+ where 
+\begin_inset Formula $X=\{x|Tx=0\}$
+\end_inset
+
+ and is a subspace.
+\end_layout
+
+\begin_layout Standard
+First prove that 
+\begin_inset Formula $X$
+\end_inset
+
+ is a subspace.
+ If 
+\begin_inset Formula $x_{1},x_{2}\in X$
+\end_inset
+
+, 
+\begin_inset Formula $T(x_{1}+x_{2})=Tx_{1}+Tx_{2}=0+0=0,$
+\end_inset
+
+ so 
+\begin_inset Formula $x_{1}+x_{2}\in X.$
+\end_inset
+
+ Also 
+\begin_inset Formula $T(kx_{1})=k(Tx_{1})=k0=0,$
+\end_inset
+
+
+\begin_inset Formula $kx\in X.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\begin_inset Formula $X$
+\end_inset
+
+ is a subspace.
+\end_layout
+
+\begin_layout Standard
+Then prove that the solution set 
+\begin_inset Formula $S$
+\end_inset
+
+ is 
+\begin_inset Formula $v*+X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For all 
+\begin_inset Formula $v=v*+x,x\in X$
+\end_inset
+
+ 
+\begin_inset Formula $Tv=Tv*+Tx=Tv*=w$
+\end_inset
+
+, so 
+\begin_inset Formula $v*+X\subseteq S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Also, 
+\begin_inset Formula $\forall s\in S,T(s-v*)=Ts-Tw*=w-w=0$
+\end_inset
+
+, so 
+\begin_inset Formula $(s-v*)\in X$
+\end_inset
+
+ , so 
+\begin_inset Formula $S\subseteq v*+X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we have proved that 
+\begin_inset Formula $S=v*+X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If in case that 
+\begin_inset Formula $X=\{0\}$
+\end_inset
+
+ , then 
+\begin_inset Formula $v*$
+\end_inset
+
+ is the only solution, that corresponds to case (ii)
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $X$
+\end_inset
+
+ is a subspace of finite dimension , then that corresponds to case (iii)
+\end_layout
+
+\begin_layout Standard
+(b)
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $T$
+\end_inset
+
+ is injective and 
+\begin_inset Formula $w$
+\end_inset
+
+ is in range 
+\begin_inset Formula $T$
+\end_inset
+
+ , then we have only solution(case 2).
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $T$
+\end_inset
+
+ is not injective and 
+\begin_inset Formula $w$
+\end_inset
+
+ is in range 
+\begin_inset Formula $T$
+\end_inset
+
+, then we have case 3.(Solution forms a affine space)
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $w$
+\end_inset
+
+ is not in range 
+\begin_inset Formula $T,$
+\end_inset
+
+then we have case 1.(No solution)
+\end_layout
+
+\begin_layout Standard
+(c)
+\end_layout
+
+\begin_layout Standard
+As we have shown in (a) , 
+\begin_inset Formula $X$
+\end_inset
+
+ is the null space of 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ The dimension of 
+\begin_inset Formula $X$
+\end_inset
+
+ is the dimension of 
+\begin_inset Formula $V$
+\end_inset
+
+ minus the dimension of 
+\begin_inset Formula $TV$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(d) If 
+\begin_inset Formula $\forall w\in W$
+\end_inset
+
+ one can find 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ s.t.
+ 
+\begin_inset Formula $Tv=w.$
+\end_inset
+
+Then the range of 
+\begin_inset Formula $T$
+\end_inset
+
+ which we note as subspace 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $W\subseteq S$
+\end_inset
+
+.
+ We assmue 
+\begin_inset Formula $V=span\{e_{1},e_{2}...e_{n}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where n is the dimension of 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ We can prove that 
+\begin_inset Formula $S=span\{Te_{1},Te_{2},Te_{3}...Te_{n}\}$
+\end_inset
+
+.
+ This is easy to prove.
+ Since 
+\begin_inset Formula $\forall v\in V,$
+\end_inset
+
+ assume 
+\begin_inset Formula $v=k_{1}e_{1}+k_{2}e_{2}+...+k_{n}e_{n}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Tv=T(k_{i}e_{i})=k_{i}Te_{i}\in span\{Te_{i}\}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $S=span\{Te_{1},Te_{2},..,Te_{n}\}$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $dim(S)\leq dim(V)<dim(W)$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $W\nsubseteq S.$
+\end_inset
+
+ So there must be some 
+\begin_inset Formula $w\in W$
+\end_inset
+
+ not in 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+(e)
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $S\subseteq W$
+\end_inset
+
+, that means 
+\begin_inset Formula $dim\{span\{Te_{1},Te_{2},...Te_{n}\}\}\leq dim(W)<dim(V)=n$
+\end_inset
+
+.
+ That means 
+\begin_inset Formula $\{Te_{i}\}$
+\end_inset
+
+ cannot be linear independent.
+ So that there must be a set of non zero coefficients 
+\begin_inset Formula $\{k_{i}\}$
+\end_inset
+
+ such that 
+\begin_inset Formula $T\Sigma k_{i}e_{i}=0.$
+\end_inset
+
+ That means the null space of 
+\begin_inset Formula $T$
+\end_inset
+
+ (noted as 
+\begin_inset Formula $X$
+\end_inset
+
+)is at least one dimensional.
+ So if 
+\begin_inset Formula $Tv*=w*$
+\end_inset
+
+, 
+\begin_inset Formula $v*+X$
+\end_inset
+
+ is the solution set of 
+\begin_inset Formula $Tv=w*$
+\end_inset
+
+.
+ So 
+\begin_inset Formula $w*$
+\end_inset
+
+ has more than 1 solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) Since all the n order polynomials can be expressed as 
+\begin_inset Formula $p(x)=\Sigma_{i=0}^{n}k_{i}x^{i}$
+\end_inset
+
+and all the 
+\begin_inset Formula $\Sigma_{i=0}^{n}k_{i}x^{i}$
+\end_inset
+
+ belongs to 
+\begin_inset Formula $P_{n}(R)$
+\end_inset
+
+,so 
+\begin_inset Formula $P_{n}(R)=span\{1,x,x^{2}...x^{n}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then let's prove that 
+\begin_inset Formula $\{1,x,x^{2},...,x^{n}\}$
+\end_inset
+
+ are linear independent.
+ This is been proved in last hw set.
+ 
+\end_layout
+
+\begin_layout Standard
+(b)
+\end_layout
+
+\begin_layout Standard
+Assume 
+\begin_inset Formula $e_{n}=x^{n}$
+\end_inset
+
+ then 
+\begin_inset Formula $D(e_{n})=nx^{n-1}=n(e_{n-1})$
+\end_inset
+
+
+\begin_inset Formula $(n>1)$
+\end_inset
+
+ and 
+\begin_inset Formula $D(e_{0})=0$
+\end_inset
+
+ so we can write the operator in matrix form .
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D_{ij}=j\delta_{i+1,j}(i=0,1,2,..n;j=0,1,2,3,...n+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for example 
+\begin_inset Formula $D=\begin{array}{ccccc}
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & 2 & 0 & 0\\
+0 & 0 & 0 & 3 & 0\\
+0 & 0 & 0 & 0 & 4\\
+\\
+\end{array}$
+\end_inset
+
+ for 
+\begin_inset Formula $n=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M(e_{n})=e_{n+1}$
+\end_inset
+
+, so 
+\begin_inset Formula $M_{ij}=\delta_{i-1,j}(i=0,1,2,3,...n+1;j=0,1,2,3...,n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for example 
+\begin_inset Formula $D=\begin{array}{ccccc}
+0 & 0 & 0 & 0\\
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{array}$
+\end_inset
+
+ for 
+\begin_inset Formula $n=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(d)
+\begin_inset Formula $(DM)_{ij}=D_{ik}M_{kj}=k\delta_{i+1,k}\delta_{k-1,j}=(i+1)\delta_{i,j}(i,j=0,1,2,3,...n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(MD)_{ij}=M_{ik}D_{kj}=\delta_{i-1,k}j\delta_{k+1,j}=j\delta_{i,j}(i,j=0,1,2,3...n+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(e)orignally the 
+\begin_inset Formula $MD$
+\end_inset
+
+ operator is from 
+\begin_inset Formula $P_{n+1}(R)$
+\end_inset
+
+ to 
+\begin_inset Formula $P_{n+1}(R)$
+\end_inset
+
+, if we restrict it to 
+\begin_inset Formula $P_{n}(R)$
+\end_inset
+
+, then we eliminate the 
+\begin_inset Formula $n+1$
+\end_inset
+
+ row and 
+\begin_inset Formula $n+1$
+\end_inset
+
+ column of the matrix.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{ij}=j\delta_{i,j}(i,j=0,1,2,3...n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(f) 
+\begin_inset Formula $DM-R$
+\end_inset
+
+ can be seen as the commute of operator 
+\begin_inset Formula $D$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(DM-R)_{i,j}=(i+1)\delta_{i,j}-j\delta_{i,j}=\delta_{i,j}$
+\end_inset
+
+ that is the identity operator.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{3}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a)All the functions that are Riemann intergrable and the the Riemann integral
+ of the function is also Riemann integrable is in the range of the linear
+ map 
+\begin_inset Formula $D^{2}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+For example, the dirichlet function is not in the range.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D^{2}f(x)=0$
+\end_inset
+
+, then it is easy to solve this ode and get 
+\begin_inset Formula $f(x)=a+bx$
+\end_inset
+
+.
+ So the kernel of 
+\begin_inset Formula $D^{2}$
+\end_inset
+
+operator are all the first and zero order polynomials.
+ It is a 
+\begin_inset Formula $2$
+\end_inset
+
+ dimensional space 
+\begin_inset Formula $span\{1,x\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b)We can solve the ODE by integral.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u"(x)=f(x)$
+\end_inset
+
+ 
+\begin_inset Formula $u'(x)=C_{1}+\int_{0}^{x}f(x')dx'$
+\end_inset
+
+
+\begin_inset Formula $u(x)=C_{2}+\int_{0}^{x}(C_{1}+\int_{0}^{u}f(x')dx')du=C_{2}+C_{1}x+\int_{0}^{x}\int_{0}^{u}f(x')dx'du$
+\end_inset
+
+ So the ODE donot have a unique solution.
+ The solution to this ODE is a special solution plus a linear space that
+ is the kernel of the 
+\begin_inset Formula $D^{2}$
+\end_inset
+
+ operator.
+\end_layout
+
+\begin_layout Standard
+(c)Let's node 
+\begin_inset Formula $F(x):=\int_{0}^{x}\int_{0}^{u}f(x')dx'du.$
+\end_inset
+
+ If we have two boundary conditions, then we need to enforce 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u(0)=F(0)+C_{2}=a$
+\end_inset
+
+ and 
+\begin_inset Formula $u(1)=F(1)+C_{1}+C_{2}=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since 
+\begin_inset Formula $F(0)=0,$
+\end_inset
+
+
+\begin_inset Formula $C_{2}=a$
+\end_inset
+
+ and 
+\begin_inset Formula $C_{1}=b-a-F(1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So we have a unique solution.
+\end_layout
+
+\begin_layout Standard
+(d) Yes.
+ It has a unique solution.
+ Since in (2) we have n+1 linear relations and 
+\begin_inset Formula $n+1$
+\end_inset
+
+ unknowns (
+\begin_inset Formula $x_{0},x_{1}...x_{n}$
+\end_inset
+
+).
+ And we can show later that the 
+\begin_inset Formula $n+1$
+\end_inset
+
+ relations are linearly independent.
+\end_layout
+
+\begin_layout Standard
+(e)
+\end_layout
+
+\begin_layout Standard
+A=
+\begin_inset Formula $\begin{bmatrix}\\
+\\
+\\
+\begin{array}{cccccccc}
+-1 & 2 & -1\\
+ & -1 & 2 & -1\\
+ &  & -1 & 2 & -1\\
+ &  &  & ... & ... & ...\\
+ &  &  &  & -1 & 2 & -1\\
+ &  &  &  &  & -1 & 2 & -1\\
+1\\
+ &  &  &  &  &  &  & 1
+\end{array}\\
+\\
+\\
+\\
+\\
+\end{bmatrix}$
+\end_inset
+
+,x=
+\begin_inset Formula $\begin{bmatrix}\\
+\\
+\\
+\begin{array}{c}
+v(x_{0})\\
+v(x_{1})\\
+v(x_{2})\\
+...\\
+...\\
+...\\
+...\\
+v(x_{n})
+\end{array}\\
+\\
+\\
+\\
+\\
+\end{bmatrix}$
+\end_inset
+
+,b=
+\begin_inset Formula $\begin{bmatrix}\\
+\\
+\\
+\begin{array}{c}
+h^{2}f(x_{1})\\
+h^{2}f(x_{2})\\
+...\\
+...\\
+...\\
+h^{2}f(x_{n-1})\\
+a\\
+b
+\end{array}\\
+\\
+\\
+\\
+\\
+\end{bmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(f)
+\end_layout
+
+\begin_layout Standard
+function[results] = solver(N,func_handle,a,b)
+\end_layout
+
+\begin_layout Standard
+A = zeros(N+1);
+\end_layout
+
+\begin_layout Standard
+r = zeros(1,N+1); 
+\end_layout
+
+\begin_layout Standard
+for ii = 1:1:N-1 
+\end_layout
+
+\begin_layout Standard
+A(ii,ii) = -1; 
+\end_layout
+
+\begin_layout Standard
+A(ii,ii+1) = 2; 
+\end_layout
+
+\begin_layout Standard
+A(ii,ii+2) = -1; 
+\end_layout
+
+\begin_layout Standard
+end 
+\end_layout
+
+\begin_layout Standard
+A(N,1) = 1; 
+\end_layout
+
+\begin_layout Standard
+A(N + 1 , N + 1) = 1; 
+\end_layout
+
+\begin_layout Standard
+X = linspace(0,1,N+1); 
+\end_layout
+
+\begin_layout Standard
+h = 1/N; 
+\end_layout
+
+\begin_layout Standard
+for ii = 1:1:N-1 
+\end_layout
+
+\begin_layout Standard
+r(ii) = h^2*func_handle(X(ii + 1)); 
+\end_layout
+
+\begin_layout Standard
+end 
+\end_layout
+
+\begin_layout Standard
+r(N) = a; r(N+1) = b;
+\end_layout
+
+\begin_layout Standard
+results = A
+\backslash
+r';
+\end_layout
+
+\begin_layout Standard
+plot(X,results); 
+\end_layout
+
+\begin_layout Standard
+end 
+\end_layout
+
+\begin_layout Standard
+solution = solver(10,@f,0,1); 
+\end_layout
+
+\begin_layout Standard
+hold on 
+\end_layout
+
+\begin_layout Standard
+solution = solver(100,@f,0,1); 
+\end_layout
+
+\begin_layout Standard
+hold on 
+\end_layout
+
+\begin_layout Standard
+solution = solver(1000,@f,0,1); 
+\end_layout
+
+\begin_layout Standard
+(g)
+\end_layout
+
+\begin_layout Standard
+The exact solution to (1) is :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x)+C_{1}x+C_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F(x)=\int_{0}^{1}\int_{0}^{x'}(-4\pi^{2})sin(2\pi u)dudx'=sin(2\pi x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{2}=a=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C_{1}=b-a-F(1)=1-0-0=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So the solution is 
+\begin_inset Formula $sin(2\pi x)+x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename 101001000.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(h)
+\end_layout
+
+\begin_layout Standard
+The problem (1) has a solution since 
+\begin_inset Formula $cos(e^{3x})$
+\end_inset
+
+ is Rieman integrable for twice.
+\end_layout
+
+\begin_layout Standard
+The problem(2) also has a solution.
+ And that should converge to the analytical solution in (1)
+\end_layout
+
+\begin_layout Standard
+Here shows the plot.
+\end_layout
+
+\begin_layout Standard
+We cannot write the integral in a simple analytical form .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename unknownfunc.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
